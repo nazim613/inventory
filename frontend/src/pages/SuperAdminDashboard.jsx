@@ -585,7 +585,9 @@ const SuperAdminDashboard = () => {
              <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
                  <ShieldAlert size={28} className="text-primary" />
              </div>
-             <span>SaaS Admin</span>
+             <span className="text-lg md:text-xl lg:text-2xl truncate">
+  SaaS Admin
+</span>
           </div>
         </div>
         

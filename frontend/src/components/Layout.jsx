@@ -61,12 +61,15 @@ const Layout = () => {
       <div className="drawer-side z-40">
         <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label> 
         <ul className="menu p-4 w-72 min-h-full bg-base-100 text-base-content border-r border-base-300">
-          <div className="flex items-center gap-2 px-4 py-6 mb-4">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-primary-content font-bold text-xl shadow-lg border-2 border-primary-content shrink-0">
-              {companyName ? companyName.charAt(0).toUpperCase() : 'P'}
-            </div>
-            <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary truncate">{companyName}</h1>
-          </div>
+          <div className="flex items-center gap-3 px-4 py-6 mb-4 overflow-hidden">
+  <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-primary-content font-bold text-lg shadow-lg border-2 border-primary-content shrink-0">
+    {companyName ? companyName.charAt(0).toUpperCase() : 'P'}
+  </div>
+
+  <h1 className="text-lg md:text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary truncate max-w-[160px]">
+    {companyName}
+  </h1>
+</div>
           {navigation.map((item) => {
             const Icon = item.icon;
             const isActive = location.pathname.startsWith(item.href);
