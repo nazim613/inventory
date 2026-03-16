@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@layer base {
+  body {
+    @apply antialiased bg-base-200 text-base-content font-sans;
+  }
+}
