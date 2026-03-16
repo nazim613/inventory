@@ -16,7 +16,8 @@ app.use(cors({
   origin: [
     "http://localhost:5173", 
     "http://localhost:3000",
-    "https://inventory-orpin-nine.vercel.app"
+    "https://inventory-orpin-nine.vercel.app",
+    "https://inventory.itsolutionsexperts.in"
   ],
   credentials: true
 }));
