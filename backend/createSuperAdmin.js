@@ -1,9 +1,8 @@
-const path = require('path');
-const dotenv = require('dotenv');
-dotenv.config({ path: path.join(__dirname, '../.env') });
+
 const mongoose = require('mongoose');
-const User = require('./models/User');
-const connectDB = require('./config/db');
+const User = require('./src/models/User');
+const connectDB = require('./src/config/db');
+require('dotenv').config();
 
 const create = async () => {
     try {
